@@ -1,0 +1,85 @@
+/* #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized. */
+
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
+
+/* PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example! */
+
+/* root */
+:root{
+  --block-color:#ccdbdc;
+  --backg-color:#171738;
+}
+
+/* body */
+body{
+  background-color:var(--backg-color);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box{
+  background-color:var(--block-color);
+  box-sizing: border-box;
+  width: 400px;
+  padding: 40px 50px;
+  margin:auto;
+  padding:10px;
+  border-radius:5px;
+  line-height:1.5rem;
+  color:var(--backg-color);
+}
+
+#text{
+  width:80%;
+  height:50%;
+  margin:20px;
+  font-size:120%;
+  text-align:justify;
+  padding:5px;
+}
+
+#author{
+  text-align:right;
+  font-style:italic;
+  font-size:100%;
+  width:80%;
+  margin-left:20px;
+  padding:5px;
+}
+
+#container-buttons{
+  display:flex;
+  justify-content:space-between;
+  width:80%;
+  margin-left:20px;
+  padding:5px;
+  margin-top:.5rem;
+}
+
+button{
+  font-size:14px;
+  padding:.5rem;
+  border-radius:5px;
+  border:0px;
+  background-color:var(--backg-color);
+  color:var(--block-color);
+}
+.fa-twitter{
+  font-size: 200%;
+  padding:5px;
+  font-size:160%;
+  vertical-align:center;
+  color:var(--backg-color);
+}
+footer{
+  color:var(--block-color);
+  text-align:center;
+  font-style:italic;
+  margin:5px;
+}
